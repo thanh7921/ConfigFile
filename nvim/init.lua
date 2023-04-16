@@ -1,3 +1,7 @@
+-- disable netrw at the very start of init.lua (for feature.nvim-tree)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- USER OPTION --
 require('user.options')
 require('user.keymaps')
@@ -15,6 +19,7 @@ require('feature.nvim-autopairs')
 require('feature.comment')
 require('feature.luasnip')
 require('feature.nvim-cmp')
+require('feature.nvim-tree')        -- need to have netrw disabled
 
 -- UI CHANGES --
 -- put setting the colorscheme first, so that other plugin see the new color scheme

@@ -40,6 +40,13 @@ return require('packer').startup({
         --------------------------------------------------------------------------
         -- use 'glepnir/dashboard-nvim'
 
+        -- FILE EXPLORER --
+        --------------------------------------------------------------------------
+        use {
+            'nvim-tree/nvim-tree.lua',
+            requires = { 'nvim-tree/nvim-web-devicons', },
+        }
+
         -- TREESITTER --
         --------------------------------------------------------------------------
         use {
@@ -92,10 +99,10 @@ return require('packer').startup({
         end
         -- Add autocommand for PackerSync after this file is changed
         vim.cmd([[
-            augroup packer_user_config
-                autocmd!
-                autocmd BufWritePost packer.lua source <afile> | PackerSync
-            augroup end
+        augroup packer_user_config
+        autocmd!
+        autocmd BufWritePost packer.lua source <afile> | PackerSync
+        augroup end
         ]])
     end,
 

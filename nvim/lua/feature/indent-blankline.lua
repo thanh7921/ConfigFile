@@ -1,5 +1,5 @@
 require("indent_blankline").setup {
-    filetype_exclude = { "dashboard", "help"},
+    filetype_exclude = { "dashboard", "help" },
     -- blank line will have different indent guide
     char_blankline = '┊',    -- set to serated indent guide
 
