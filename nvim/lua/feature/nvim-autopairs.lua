@@ -3,7 +3,7 @@ local Rule = require("nvim-autopairs.rule")
 
 npairs.setup {
     -- NOTE: change ignore filetype when adding new plugin
-    disable_filetype = { "TelescopePrompt", "spectre_panel" },
+    disable_filetype = { "TelescopePrompt", },
     disable_in_macro = false,  -- disable when recording or executing a macro
     disable_in_visualblock = false, -- disable when insert after visual block mode
     disable_in_replace_mode = true,
@@ -43,7 +43,6 @@ for _,bracket in pairs(brackets) do
         Rule(bracket[1]..' ', ' '..bracket[2])
             :with_pair(function() return false end)
             :with_move(function(opts)
-                vim.pretty_print(opts)
                 return opts.prev_char:match('.%'..bracket[2]) ~= nil
             end)
             :use_key(bracket[2])

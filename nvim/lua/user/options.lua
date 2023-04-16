@@ -3,6 +3,7 @@ local options = {
 
     modeline = false,                        -- disable modeline
 
+    showmode = false,                        -- don't show mode on bottom line, already have lualine for that
     cursorline = true,                       -- highlight the current line
     number = true,                           -- set numbered lines
     relativenumber = true,                   -- set relative numbered lines
