@@ -99,10 +99,10 @@ return require('packer').startup({
         end
         -- Add autocommand for PackerSync after this file is changed
         vim.cmd([[
-        augroup packer_user_config
-        autocmd!
-        autocmd BufWritePost packer.lua source <afile> | PackerSync
-        augroup end
+            augroup packer_user_config
+            autocmd!
+            autocmd BufWritePost packer.lua source <afile> | PackerSync
+            augroup end
         ]])
     end,
 
@@ -110,7 +110,7 @@ return require('packer').startup({
         -- display packer in a window
         display = {
             open_fn = function()
-                return require('packer.util').float({ border = 'single' })
+                return require('packer.util').float({ border = 'rounded' })
             end
         }
     }
