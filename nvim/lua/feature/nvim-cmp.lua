@@ -48,7 +48,7 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'luasnip' }, -- For luasnip users.
-        { name = 'buffer' },
+        { name = 'buffer', keyword_length = 4 },
         { name = 'path' },
     }),
 
@@ -69,8 +69,17 @@ cmp.setup({
                 end
                 return vim_item
             end,
+            menu = {
+                nvim_lsp = "[LSP]",
+                luasnip = "[Snip]",
+                buffer = "[Buff]",
+                path = "[Path]"
+            },
         }),
     },
+    experimental = {
+        ghost_text = true,
+    }
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
