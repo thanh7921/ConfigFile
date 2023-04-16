@@ -1,0 +1,8 @@
+*
+!/.gitignore
+!/nvim/*
+!/gh/*
+!/git/*
+!/mpv/*
+!/alacritty/*
+!/fish/*
