@@ -1,0 +1,8 @@
+[user]
+    email = 83776509+ntpt7921@users.noreply.github.com
+    signingkey = ~/.ssh/school_gh_ed25519
+[commit]
+    # autosign commit
+    gpgsign = true
+[gpg]
+    format = ssh

@@ -1,0 +1,18 @@
+[include]
+    path = ./config.alias
+    path = ./config.personal
+
+# Conditionally rewriting user config base on repo directory path
+# This is for special config used with school Github account
+[includeIf "gitdir:~/Documents/Uni/"]
+    path = config.school
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	autocrlf = input
