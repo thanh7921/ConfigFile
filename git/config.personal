@@ -1,13 +1,12 @@
 [user]
     name = "Nguyễn Trần Phước Thành"
-    email = 20029050+thanh7921@users.noreply.github.com
-    signingkey = ~/.ssh/personal_gh_ed25519
+    email = tranphuocthanh01@gmail.com
+    signingkey = C89A5CC5502150246BB9337389DC7D0BF46B6759
 [core]
     editor = nvim
+	autocrlf = input
 [init]
     defaultBranch = main
 [commit]
     # autosign commit
     gpgsign = true
-[gpg]
-    format = ssh

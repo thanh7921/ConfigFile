@@ -1,8 +1,12 @@
 [user]
-    email = 83776509+ntpt7921@users.noreply.github.com
-    signingkey = ~/.ssh/school_gh_ed25519
+    name = "Nguyễn Trần Phước Thành"
+    email = thanh.nguyen7921@hcmut.edu.vn
+    signingkey = DEAD8A1E06E7ED011CD10FBB8DCF33B78FE39774
+[core]
+    editor = nvim
+	autocrlf = input
+[init]
+    defaultBranch = main
 [commit]
     # autosign commit
     gpgsign = true
-[gpg]
-    format = ssh
