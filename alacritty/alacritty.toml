@@ -1,0 +1,50 @@
+import = ["/home/ntpt/.config/alacritty/dracula.toml"]
+ipc_socket = true
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 10
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[scrolling]
+history = 10000
+multiplier = 4
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[shell]
+program = "/usr/bin/fish"
+
+[window]
+decorations = "none"
+decorations_theme_variant = "Dark"
+opacity = 0.96
+
+[window.padding]
+x = 4
