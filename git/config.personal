@@ -1,12 +1,15 @@
 [user]
     name = "Nguyễn Trần Phước Thành"
     email = tranphuocthanh01@gmail.com
-    signingkey = C89A5CC5502150246BB9337389DC7D0BF46B6759
+    signingkey = 3AC659EE9D3AD66123E70F0A14328766AC352DDD
 [core]
     editor = nvim
-	autocrlf = input
+    autocrlf = input
 [init]
     defaultBranch = main
 [commit]
+    # autosign commit
+    gpgsign = true
+[tag]
     # autosign commit
     gpgsign = true
